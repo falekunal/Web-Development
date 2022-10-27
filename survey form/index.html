@@ -12,8 +12,7 @@
         <section class="main">
             <h1 class="heading">Application for Job</h1>
             <h1 class="note"><strong>Note:</strong> Form is to be completed with correct details</h1>
-            <section class="personal-details">
-                <h1 class="sub-heading">Personal Details</h1>
+            <fieldset class="personal-details"><legend class="sub-heading"> Personal Details</legend>
                 <form name="Job application">
 
                     <label for="Name">Name:</label>
@@ -26,14 +25,14 @@
                     <input id="E-mail" name="E-mail" placeholder="Enter E-mail here">
                     <br><br>
                     <label for="Phone-Number">Phone-Number:</label>
-                    <input id="Phone-Number" name="Phone-Number" placeholder="Enter Phone-Number here">
+                    <input type="number" id="Phone-Number" name="Phone-Number" placeholder="Enter Phone-Number here">
                     <br><br>
                     <label for="IQ">IQ:</label>
-                    <input id="IQ" name="IQ" placeholder="Enter IQ here">
+                    <input type="number" id="IQ" name="IQ" placeholder="Enter IQ here">
                     <br><br>
                     Gender <br><br>
                     <label for="Male">Male</label>
-                    <input type="radio" id="Male" name="Gender">
+                    <input type="radio" id="Male" name="Gender" checked="checked">
                     <label for="Female">Female</label>
                     <input type="radio" id="Female" name="Gender">
                     
@@ -43,10 +42,10 @@
                     <label for="Date of application">Date of application:</label>
                     <input type="date" id="Date of application" name="Date of application" >
             </form>           
-            </section>
+            </fieldset>
             <br>
 
-            <section class="personal-details">
+            <fieldset class="personal-details">
 
                 <form name="job application">
                     Check All Skills That Apply
@@ -73,10 +72,10 @@
                     
 
                 </form>
-            </section>
+            </fieldset>
             <br>
-            <section class="personal-details">
-                Political Persuasion:
+            <fieldset class="personal-details">
+                <label for="politics">Political Persuasion:</label>
                 <select name="Political Persuasion" id="Political Persuasion:">
                     <option value="Left Wing">Left Wing</option>
                     <option value="Right Wing">Right Wing</option>
@@ -85,7 +84,7 @@
                 </select>
                 <br>
                 <br>
-                Education Level Completed: 
+                <label for="politics">Education Level Completed:</label> 
                 <select name="Education Level" id="Education Level Completed:">
                     <option value="University">University</option>
                     <option value="High school">High school</option>
@@ -93,22 +92,21 @@
                     <option value="None">None</option>
                 </select>
                 <br><br>
-
-            </section>
-            <section class="essay">
-                <h1 class="sub-heading" >Essay Section:</h1> 
+            </fieldset>
+            <fieldset class="essay">
+                <legend class="sub-heading" >Essay Section</legend> 
                 <p class="para">In 50 words or more explain, Why Are You the Best Person for the Job?</p>
-                <textarea name="Comment" id="Comment" cols="30" rows="10"></textarea>
-                <br><br>
+                <textarea class="textarea" name="Comment" id="Comment" rows="4" placeholder="Enter text here"></textarea>
+                <br>
                 <p class="para">Please upload contact details for references</p>
-                <textarea name="Contact Details" id="Contact Details" cols="30" rows="10"></textarea>
-                <br><br>
+                <textarea class="textarea" name="Contact Details" id="Contact Details" rows="4" placeholder="Enter text here"></textarea>
+                <br>
                 <p class="para" >Upload Resume/CV</p>
                 <label for="Resume">Select a file:</label>
                 <input class="fileUpload" type="file" id="Resume" name="Resume">
 
                 <br><br>
-            </section>
+            </fieldset>
             <input class="submit" type="submit">
 
         </section>
