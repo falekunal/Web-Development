@@ -1,10 +1,146 @@
 *{
     box-sizing: border-box;
-}
-
-body{
-    padding: 0;
+    font-family:monospace;
     margin: 0;
 }
 
+.body{
+    padding: 0;
+    margin: 0;
 
+}
+
+
+.navbar{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    position: fixed;
+    /* flex:0 ; */
+    background-color: #ddd;
+    border-bottom: 1px solid black;
+}
+
+
+.navbar a {
+    float: inline-end;
+    display: block;
+    color: black;
+
+    align-self: center;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+
+.logo{
+    width: 70px;
+    height: 70px;
+    text-indent: 10px;
+    margin: 0 40% 0 15%;
+}
+
+.section1{
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10% 0 5% 0;
+}
+.email{
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 70px;
+    text-indent: 10px;
+    margin: 10px;
+
+}
+.email-button{
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: 10px;
+    background-color: orange;
+    text-align: center;
+    color: white;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: rgb(211, 244, 233);
+}
+.content-heading{
+    width: 50%;
+}
+.para{
+    width: 50%;
+}
+
+.gallery{
+    /* display: block; */
+    width: 60%;
+
+    /* justify-content: center; */
+    margin: 1% 20%;
+    /* padding: 0; */
+}
+
+.photos{
+    
+    width: 368px;
+    height: 221px;
+
+    
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dee6f2;
+    padding: 10px;
+}
+.contact-heading{
+    /* text-align: center; */
+    width: 50%;
+}
+
+.form{
+    width: 50%;
+   /* justify-items: center;    */
+}
+.contact-form{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    
+
+}
+#Fname{
+    width: 49.4%;
+}
+
+textarea{
+    resize: vertical;
+}
+
+#Email{
+    width: 49.4%;
+}
+
+.contact-button{
+    color: white;
+    background-color: orange;
+    border: none;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top:10px ;
+}
