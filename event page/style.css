@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    font-family: cursive;
+
+}
+
+.title{
+    background-color: rgb(53, 53, 53);
+    padding: 60px;
+    font-size: 130px;
+    text-align: center;
+    font-family: monospace;
+    color: #cccccc;
+}
+
+.head1{
+    color: rgb(255, 0, 255);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    background-color: #262626;
+    color: white;
+    align-items: center;
+
+}
+
+.sub-heading{
+    padding: 30px 0;
+    width: 70%;
+    
+}
+
+.line{
+    width: 70%;
+    color: #cccccc;
+    margin: 30px 0;
+}
+
+.info{
+    
+    width: 70%;
+    
+}
+.month{
+    color: rgb(255, 0, 255);
+}
+
+.short-line{
+    height:2px;
+    border-width: 0;
+    background-color:aqua;
+    width: 6%;
+    margin-top:10px ;
+}
+
+.date{
+    font-size: 50px;
+    color: #cccccc;
+}
+
+.f{
+    color: rgb(255, 0, 255);
+    padding-right:10px;
+}
+.location{
+    padding: 10px 0;
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.loc{
+    color: #626262;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.day{
+    padding-bottom: 10px;
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.timeline{
+    color: #626262;
+    text-decoration: none;
+    padding-left: 40px;
+}
+
+.d{
+    color: rgb(255, 0, 255);
+    padding-right: 10px;
+}
+
+.para{
+    font-family: monospace;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.book{
+    background-color: rgb(36, 129, 98);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    
+
+    .title{
+        background-color: rgb(53, 53, 53);
+        padding: 10px;
+        font-size: 70px;
+        text-align: center;
+        font-family: monospace;
+        color: #cccccc;
+    }
+    
+    .head1{
+        color: rgb(255, 0, 255);
+    }
+    .photo{
+        width: 80%;
+    }
+
+    .book{
+        align-self: center;
+    }
+}
