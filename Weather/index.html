@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Tiny <span>weather</span></h1>
+        <section class="search-container">
+           
+            <input type="text" id="city" placeholder="Enter Location">    
+        </section> 
+
+        <div id="weather-info">
+            <div class="temp-info info-block">
+                <h3 class="info-header">Temps</h3>
+                <p class="sub-info-header">Now</p>
+                <p id="current-temperature">°C</p>
+
+                <div class="min-max">
+                    <div class="min">
+                    <p class="sub-info-header">Min</p>
+                    <p id="current-temperature">°C</p>                
+                    </div>
+
+                    <div class="max">
+                    <p class="sub-info-header">Max</p>
+                    <p id="current-temperature">°C</p>                
+                    </div>
+
+                </div>
+            </div>
+       
+            <div class="rain-info info-block">
+                <h3 class="info-header">Rain</h3>
+                <p id="rain-description"></p>
+            </div>
+
+            <div class="wind-info info-block">
+                <h3 class="info-header">Wind</h3>
+                <p id="wind-speed-info"></p>
+            </div>
+        </div>
+    </div>
+    <script src="info.js"></script>
+
+</body>
+</html>

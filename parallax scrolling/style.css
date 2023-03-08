@@ -10,8 +10,13 @@
 
 
 .scroll-down{
-    display: flex;
-    justify-content: space-around;
+    background-image: url(./photos/bg1.jpg.jpeg);
+    min-height: 550px;
+
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
 }
 
 
@@ -21,7 +26,8 @@
     color: white;
     padding: 10px 20px;
     text-align: center;
-    font-size: 30px;
+    font-size: 200%;
+    width: 20%;
 }
 
 
