@@ -1,75 +1,114 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     font-family: monospace;
     display: flex;
     flex-direction: column;
     align-items: center;
-
     height: 100vh;
-    background-color: aqua;
+    background-color: #02afda;
 }
 
-h1{
+h1 {
     margin-top: 20px;
-    color:aqua;
-
+    color: #02afda;
 }
-span{
+
+span {
     color: blueviolet;
 }
 
-.container{
-    background-color: white;
-    border-radius: 30px;
-    padding: 10px;
-    text-align: center;
-}
-
-#weather-info{
+.container {
+    margin-top: 100px;
     display: flex;
-    margin: 10px;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: #02afda 5px 5px 10px;
 }
 
-.info-block{
-    padding: 10px;
-    margin: 5px;
-    border: solid;
-    border-radius: 14px;
-    border-width: 1px;
+svg{
+    width: 50px;
+    padding: 5px 5px;
+    fill: blueviolet;
+    background-color: #02afda;
+    border-radius: 15px 0px 0px 15px ;
+    display: flex;
+    align-self: center;
+}
+.search-container {
+    margin-top: 20px;
+    display: flex;
+    padding: 10px 0px;
 }
 
-.info-header{
+input {
+    font-size: 1.1rem;
+    padding: 10px 5px;
+    color: #02afda;
+    background-color: whitesmoke;
+    border: 3px #02afda solid;
+    border-radius: 0px 15px 15px 0px;
+
+}
+
+#weather-info {
+    display: none;
+    margin-top: 30px;
+    width: 100%;
+    animation: fade-in 0.5s forwards;
+    justify-content: space-evenly;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+
+.info-block {
+    /* padding: 10px; */
+    text-align: center;
+    width: 110px;
+    box-shadow: 0px 0px 10px 2px rgb(211, 211, 211);
+    /* margin: 5px; */
+    border-radius: 15px;
+
+}
+
+.info-header {
     color: blueviolet;
     font-weight: bold;
     font-size: 20px;
 }
 
-/* 
-.search-container{
-    margin: 10px;
-    border-radius: 10px;
-    border: 5px;
-    border-color: aqua ;
-} */
 
-#city{
-    margin: 10px;
-    font-size: 20px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
+.sub-info-header {
+    color: #02afda;
 }
 
-.min-max{
+.min-max {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.sub-info-header{
-    color: aqua;
+#rain-description,
+#windspeed-info {
+    margin-top: 15px;
 }
