@@ -109,6 +109,6 @@ input {
 }
 
 #rain-description,
-#windspeed-info {
+#windspeed-info,#lat,#lon {
     margin-top: 15px;
 }
