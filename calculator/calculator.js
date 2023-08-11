@@ -17,7 +17,6 @@ function buttonClick(value) {
         handleNumber(value);
     }
     rerender();
-
 }
 
 function handleNumber(value) {

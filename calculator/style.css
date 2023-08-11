@@ -11,6 +11,8 @@ body {
     width: 400px;
     background-color: black;
     color: white;
+    border:0.23em solid gray;
+    border-radius:0.7em ;
 }
 
 .screen {
@@ -26,7 +28,7 @@ body {
     height: 100px;
     width: 24.5%;
     border: none;
-    border-radius: 0;
+    border-radius: 0.2em;
     font-size: 40px;
     cursor: pointer;
 }
@@ -61,6 +63,7 @@ body {
 
 
 .calc-row {
+    margin: 0.2em;
     display: flex;
     align-items: stretch;
     justify-content: space-between;
